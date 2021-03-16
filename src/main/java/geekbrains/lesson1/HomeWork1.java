@@ -1,5 +1,6 @@
 package geekbrains.lesson1;
 
+
 public class HomeWork1 {
     public static void main(String[] args) {
         int a = 7;                     //for task 1, 2
@@ -43,6 +44,7 @@ public class HomeWork1 {
         }
     }
 
+
     /*-------------------------------------------------------*/
     // task_3
     public static void positiveNumber(int f) {
@@ -55,12 +57,14 @@ public class HomeWork1 {
         System.out.println(number);
     }
 
+
     /*--------------------------------------------------------*/
     // task_4
     public static void inputName(String k) {
         String out = "Привет, " + k + "!";
         System.out.println(out);
     }
+
 
     /*--------------------------------------------------------*/
     // task_5
