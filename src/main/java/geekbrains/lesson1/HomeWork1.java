@@ -1,6 +1,5 @@
 package geekbrains.lesson1;
 
-
 public class HomeWork1 {
     public static void main(String[] args) {
         int a = 7;                     //for task 1, 2
@@ -8,7 +7,7 @@ public class HomeWork1 {
         int c = 20;                     //for task 1
         int d = 25;                     //for task 1
         int f = 0;                      //for task 3
-        String k = "Вася Пупкин";       //for task 4
+        String k = "Саша Пушкин";       //for task 4
 
         float r = calcExp(a, b, c, d);  //for task 1
         System.out.println(r);          //for task 1
@@ -24,7 +23,8 @@ public class HomeWork1 {
         fourthYear(year);
     }
 
-    /*----------------------------------------------------*/
+
+    /*------------------------------------------------------*/
     // task_1
     public static float calcExp(int a, int b, int c, int d) {
         float result = a * (b + (1.0f * c / d));
