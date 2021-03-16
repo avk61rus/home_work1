@@ -1,2 +1,12 @@
 # Project exclude paths
 /target/
+# Package Files #
+*.jar
+*.war
+*.ear
+*.iml
+*.idea/*
+*.class
+
+# virtual machine crash logs, see http://www.java.com/en/downloader/help/error_hotspot.xml
+hs_err_pid*
