@@ -1,5 +1,6 @@
 package geekbrains.lesson1;
 
+
 public class HomeWork1 {
     public static void main(String[] args) {
         int a = 7;                     //for task 1, 2
