@@ -23,7 +23,6 @@ public class HomeWork1 {
         fourthYear(year);
     }
 
-
     /*------------------------------------------------------*/
     // task_1
     public static float calcExp(int a, int b, int c, int d) {
@@ -56,14 +55,12 @@ public class HomeWork1 {
         System.out.println(number);
     }
 
-
     /*--------------------------------------------------------*/
     // task_4
     public static void inputName(String k) {
         String out = "Привет, " + k + "!";
         System.out.println(out);
     }
-
 
     /*--------------------------------------------------------*/
     // task_5
