@@ -4,17 +4,13 @@ import org.w3c.dom.ls.LSOutput;
 
 public class HomeWork2<arr1> {
     public static void main(String[] args) {
-        replaceValue();                        // for task 1
+        replaceValue();
         progressionThree();
         multiplyByTwo();
         twoDiagonals();
         arrMaxMin();
         findBorder();
-
-
     }
-
-
 
     // task #1
     /* --------------------------------------------------------------------*/
@@ -120,10 +116,12 @@ public class HomeWork2<arr1> {
         int i, sum;
         sum = 0;
         i = 0;
-        int[] my = new int[]{3, 0, 4, 1, 2, 1, 10, 1};
+        int[] my = new int[]{3, 6, 4, 1, 2, 1, 10, 1};
         for (i = 0; i < my.length; i ++) {
-            sum += my[i];}
-
+            sum += my[i];
+        }
+        if (sum % 2 != 0) return; // Почему ругается если написать: if (sum % 2 != 0) return false;
+//        System.out.println(sum);
         sum = sum / 2;
         int sumfind = 0;
         i = 0;
@@ -144,4 +142,9 @@ public class HomeWork2<arr1> {
         }
         System.out.println();
     }
+
+    // task #7
+    /* ----------------------------------------------------------------------*/
+    /* Самостоятельно решение не нашел                                       */
+
 }
