@@ -5,31 +5,17 @@ public class HomeWork2<arr1> {
         replaceValue();                        // for task 1
         progressionThree();
         multiplyByTwo();
-
-
-        int y,x;
-        y = 9;
-        x = 9;
-        int[][] arr4 = new int[x][y];
-        System.out.println();
-        for (y = 0; y < arr4.length; y ++) {
-            for (x = 0; x < arr4[y].length; x ++) {
-                System.out.print(arr4[y][x] + " ");
-            }
-            System.out.println();
-        }
-
-
-
+        twoDiagonals();
 
 
 
 
     }
 
+
+
     // task #1
     /* --------------------------------------------------------------------*/
-
 
     private static void replaceValue() {
         int[] arr1 = {1, 1, 0, 1, 0, 0, 1, 0, 1, 1};
@@ -81,7 +67,26 @@ public class HomeWork2<arr1> {
 
     // task #4
     /* ----------------------------------------------------------------------*/
-    
+    private static void twoDiagonals() {
+        int y,x, c, d;
+        y = 9;
+        x = 9;
+        c = y;
+        d = y;
+        int[][] arr4 = new int[x][y];
+        System.out.println();
+        for (y = 0; y < arr4.length; y ++) {
+            for (x = 0; x < arr4[y].length; x ++) {
+                if(y == x) {
+                    arr4[x][y] = d;
+                    arr4[x][c - 1 - x] = d;
+                    arr4[c - 1- x][y] = d;
+                }
+                System.out.print(arr4[y][x] + "  ");
+            }
+            System.out.println();
+        }
+    }
 
 
 
