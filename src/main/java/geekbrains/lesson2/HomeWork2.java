@@ -1,5 +1,7 @@
 package geekbrains.lesson2;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class HomeWork2<arr1> {
     public static void main(String[] args) {
         replaceValue();                        // for task 1
@@ -7,8 +9,6 @@ public class HomeWork2<arr1> {
         multiplyByTwo();
         twoDiagonals();
         arrMaxMin();
-
-
         findBorder();
 
 
@@ -19,6 +19,7 @@ public class HomeWork2<arr1> {
     // task #1
     /* --------------------------------------------------------------------*/
     private static void replaceValue() {
+        System.out.println("\n// task #1");
         int[] arr1 = {1, 1, 0, 1, 0, 0, 1, 0, 1, 1};
             for (int i = 0; i < arr1.length; i++) {
                 System.out.print(arr1[i] + " ");
@@ -38,7 +39,6 @@ public class HomeWork2<arr1> {
 
     // task #2
     /* --------------------------------------------------------------------*/
-
     private static void progressionThree() {
         int K = 3;
         int i=0;
@@ -54,11 +54,10 @@ public class HomeWork2<arr1> {
 
     // task #3
     /* ----------------------------------------------------------------------*/
-
     private static void multiplyByTwo() {
         int[] arr3 = new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i=0; i < arr3.length; i++) {System.out.print(arr3[i] + "  ");}
-             System.out.print("\n");
+             System.out.println();
         for (int i=0; i < arr3.length; i++) {
             if (arr3[i] < 6) { arr3[i] = arr3[i] * 2;
         }
@@ -120,30 +119,29 @@ public class HomeWork2<arr1> {
     private static void findBorder() {
         int i, sum;
         sum = 0;
-        int[] my = new int[]{1, -5, 3, 2, 3, 4};
-        for (i=0; i < my.length; i ++) {
+        i = 0;
+        int[] my = new int[]{3, 0, 4, 1, 2, 1, 10, 1};
+        for (i = 0; i < my.length; i ++) {
             sum += my[i];}
+
         sum = sum / 2;
         int sumfind = 0;
-        for (i = 0; i <my.length; i ++) {
-            if (sumfind == sum) {
-                System.out.println("Граница найдена");
-            } else sumfind = sumfind + my[i];
+        i = 0;
+
+        while (sumfind != sum) {
+            sumfind = sumfind + my[i];
+            i ++;
         }
-        int CON = i-1;
-        System.out.println();
 
-
+        int CON = i;
         for (i = 0; i < CON; i ++) {
-            System.out.print("   " + my[i]);
+            System.out.print("  " + my[i]);
         }
-        System.out.print(" ||");
+
+        System.out.print("  ||");
         for (i = CON; i < my.length; i ++) {
-            System.out.print(" " + my[i] + "\n");}
+            System.out.print("  " + my[i]);
+        }
+        System.out.println();
     }
-
-
-
-
-
 }
