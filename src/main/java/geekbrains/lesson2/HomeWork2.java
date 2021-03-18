@@ -9,13 +9,11 @@ public class HomeWork2<arr1> {
         arrMaxMin();
 
 
+        findBorder();
+
 
     }
 
-//    private static void arrMaxMin() {
-//        int i = 0;
-//        int[] my = new int[]{1, 1, 3, 1, 2, 4};
-//    }
 
 
     // task #1
@@ -116,6 +114,36 @@ public class HomeWork2<arr1> {
             System.out.println("Минимум = " + minimum);
             System.out.println("\n// task #6");
         }
+
+    // task #6
+    /* ----------------------------------------------------------------------*/
+    private static void findBorder() {
+        int i, sum;
+        sum = 0;
+        int[] my = new int[]{1, -5, 3, 2, 3, 4};
+        for (i=0; i < my.length; i ++) {
+            sum += my[i];}
+        sum = sum / 2;
+        int sumfind = 0;
+        for (i = 0; i <my.length; i ++) {
+            if (sumfind == sum) {
+                System.out.println("Граница найдена");
+            } else sumfind = sumfind + my[i];
+        }
+        int CON = i-1;
+        System.out.println();
+
+
+        for (i = 0; i < CON; i ++) {
+            System.out.print("   " + my[i]);
+        }
+        System.out.print(" ||");
+        for (i = CON; i < my.length; i ++) {
+            System.out.print(" " + my[i] + "\n");}
+    }
+
+
+
 
 
 }
