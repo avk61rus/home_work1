@@ -14,19 +14,15 @@ public class Animal {
         this.skills = skills;
         this.length = length;
         this.lengthSwim = lengthSwim;
-
-
-
     }
-
 
     public void sound() {System.out.printf("Животное: %s %s %s мычит.\n", skills, color, name);}
 
-    public void swim() {System.out.printf("Животное: %s %s %s плывет.\n", skills, color, name, lengthSwim);}
+    public void swim(int lengthSwim) {
+        System.out.printf("Животное: %s %s %s плывет.\n", skills, color, name, lengthSwim);}
 
-    public void run(int length) {System.out.printf("Животное %s %s %s ,бежит %d.\n", skills, color, name, length );}
+    public void run(int length) {System.out.printf("Животное %s %s %s ,бежит %d м.\n", skills, color, name, length );}
 
     public void run() {System.out.printf("Животное %s %s %s ,бежит.\n", skills, color, name);}
-
 }
 
