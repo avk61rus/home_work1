@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
 
         int length = 0;     //инициализация (не установка) длины пробежки;
-        int lengthSwim = 10; //инициализация (не установка) длины заплыва;
+        int lengthSwim = 0; //инициализация (не установка) длины заплыва;
 
         Animal[] zoo = {
                 new Giraffe ("Жирик", "рыже-пятнистый", "гладкошерстный,", length, lengthSwim),
@@ -28,26 +28,28 @@ public class Main {
         for (Animal animal : zoo) {
              animal.sound();
              animal.run();
-             animal.swim(lengthSwim);
+             animal.swim();
         }
 
-// task #2 and #3
+// task #2
 /*---------------------------------------------------------------------------------*/
         System.out.println("\n// task #2 ");
-        length = 201;   // Установка длины пробежки (для жирафа 200м, для лисы 500м;
-        lengthSwim = 18;  //Установка длина заплыва (жираф не плавает, лиса проплывет 10м;
 
-        animalRun(length, zoo);
-        animalSwim(lengthSwim, zoo);
+        animalRun(200, zoo);
+        animalSwim(8, zoo);
     }
 
-    private static void animalRun(int length, Animal[] zoo) {
+// task #3
+/*---------------------------------------------------------------------------------*/
+    private static void animalRun(int lengthRun, Animal[] zoo) {
         for (Animal animal : zoo) {
             if ( animal instanceof Fox ) {
-                if (length > 500) ((Fox) animal).run1(length);
-                else animal.run(length);
-            } else if (length > 200) ((Giraffe) animal).run1();
-                        else animal.run(length);
+                if (lengthRun > 500) ((Fox) animal).run1(lengthRun);
+                else ((Fox) animal).run(lengthRun);
+            } else if (lengthRun > 200) ((Giraffe) animal).run1(lengthRun);
+                        else ((Giraffe) animal).run(lengthRun);
+                        int a;
+
         } System.out.println("\n// task #3 ");
     }
 
