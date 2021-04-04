@@ -12,13 +12,11 @@ public class Cat {
         this.appetite = appetite;
         this.satiety = satiety;
     }
-
     public void eatCat(Bowl bowl) {
         if (bowl.getFoodAmount() < this.appetite) {
-            System.out.printf("%s %s сьел бы %d грамм еды, но в тарелке только " + bowl.getFoodAmount() + ". %s обиделся и есть не будет!\n"
-                    , this.type, this.name, this.appetite,this.name );
+            System.out.printf("%s %s сьел бы %d грамм еды, но в тарелке только " + bowl.getFoodAmount() +
+                            ". %s обиделся и есть не будет!\n", this.type, this.name, this.appetite,this.name );
         } else  {
-
             System.out.printf("%s %s cкушал %d грамм еды и наелся.\n",this.type, this.name, this.appetite);
             bowl.decrementFood(appetite);
             satiety = true;
